@@ -19,6 +19,9 @@
       </div>
     </header>
 
+    <!-- 共通ナビゲーションバー -->
+    <CommonNavigation />
+
     <!-- メインコンテンツ -->
     <main class="container mx-auto px-4 py-8">
       <!-- 概要カード -->
@@ -289,10 +292,14 @@
 
 <script>
 import { Chart, registerables } from 'chart.js'
+import CommonNavigation from '../components/CommonNavigation.vue'
 Chart.register(...registerables)
 
 export default {
   name: 'PopulationTrend',
+  components: {
+    CommonNavigation
+  },
   data() {
     return {
       lastUpdated: '',

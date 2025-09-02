@@ -1,15 +1,15 @@
 <template>
   <div class="min-h-screen bg-gray-50">
-    <!-- ヘッダー -->
-    <header class="bg-blue-600 text-white shadow-lg">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white shadow-lg">
       <div class="container mx-auto px-4 py-6">
         <div class="flex items-center justify-between">
           <div>
-                         <h1 class="text-3xl font-bold">📊 人口統計詳細</h1>
-             <p class="text-blue-100 mt-2">すたっととっとり - 鳥取県の人口動態を年齢別・市区町村別で分析</p>
+            <h1 class="text-3xl font-bold">📈 人口詳細分析</h1>
+            <p class="text-purple-100 mt-2">すたっととっとり - 鳥取県の人口動態を年齢別・市区町村別で分析</p>
           </div>
           <div class="text-right">
-            <p class="text-sm text-blue-100">最終更新: {{ lastUpdated }}</p>
+            <p class="text-sm text-purple-100">最終更新: {{ lastUpdated }}</p>
             <div class="flex items-center mt-1">
               <div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
               <span class="text-xs text-green-200">リアルタイム更新中</span>
@@ -19,7 +19,10 @@
       </div>
     </header>
 
-    <!-- メインコンテンツ -->
+    <!-- 共通ナビゲーションバー -->
+    <CommonNavigation />
+
+    <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
       <!-- 概要カード -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
@@ -216,11 +219,13 @@
 
 <script>
 import PopulationChart from '../components/PopulationChart.vue'
+import CommonNavigation from '../components/CommonNavigation.vue'
 
 export default {
   name: 'PopulationDetail',
   components: {
-    PopulationChart
+    PopulationChart,
+    CommonNavigation
   },
   data() {
     return {

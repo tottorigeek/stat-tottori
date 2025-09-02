@@ -19,6 +19,9 @@
       </div>
     </header>
 
+    <!-- 共通ナビゲーションバー -->
+    <CommonNavigation />
+
     <!-- メインコンテンツ -->
     <main class="container mx-auto px-4 py-8">
       <!-- 地域選択セクション -->
@@ -208,8 +211,13 @@
 </template>
 
 <script>
+import CommonNavigation from '../components/CommonNavigation.vue'
+
 export default {
   name: 'LivabilityComparison',
+  components: {
+    CommonNavigation
+  },
   data() {
     return {
       lastUpdated: '',
