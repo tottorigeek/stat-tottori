@@ -98,6 +98,14 @@
           >
             📈 人口詳細
           </router-link>
+          <router-link 
+            to="/map" 
+            class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            active-class="bg-blue-900 text-white"
+            @click="closeMobileMenu"
+          >
+            🗺️ 地図
+          </router-link>
         </div>
       </div>
     </div>
