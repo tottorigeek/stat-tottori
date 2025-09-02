@@ -133,23 +133,18 @@
           </div>
         </div>
       </div>
-
-      <!-- 人口統計詳細モーダル -->
-      <PopulationModal v-if="showPopulationDetail" @close="showPopulationDetail = false" />
     </main>
   </div>
 </template>
 
 <script>
 import SocialIssueCard from '@/components/SocialIssueCard.vue'
-import PopulationModal from '@/components/PopulationModal.vue'
 import CommonNavigation from '@/components/CommonNavigation.vue'
 
 export default {
   name: 'Dashboard',
   components: {
     SocialIssueCard,
-    PopulationModal,
     CommonNavigation
   },
   data() {
