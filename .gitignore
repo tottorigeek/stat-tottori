@@ -1,0 +1,8 @@
+.cursorrules
+CLAUDE.md
+.claude
+.claude/settings.local.json
+.claude/settings.local.json 
+node_modules
+package-lock.json
+package.json
