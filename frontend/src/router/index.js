@@ -6,6 +6,10 @@ import PopulationDetail from '../views/PopulationDetail.vue'
 import LivabilityConfiguration from '../views/LivabilityConfiguration.vue'
 import PolicyTracking from '../views/PolicyTracking.vue'
 import Employment from '../views/Employment.vue'
+import D3Samples from '../views/D3Samples.vue'
+import PolicyPrediction from '../views/PolicyPrediction.vue'
+import Login from '../views/Login.vue'
+import Register from '../views/Register.vue'
 
 const routes = [
   {
@@ -47,6 +51,26 @@ const routes = [
     path: '/map',
     name: 'Map',
     component: () => import('../views/Map.vue')
+  },
+  {
+    path: '/d3-samples',
+    name: 'D3Samples',
+    component: D3Samples
+  },
+  {
+    path: '/policy-prediction',
+    name: 'PolicyPrediction',
+    component: PolicyPrediction
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register
   }
 ]
 

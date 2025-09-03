@@ -47,6 +47,36 @@
           >
             🗺️ 地図
           </router-link>
+          <router-link 
+            to="/d3-samples" 
+            class="text-white hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+            active-class="bg-blue-800 text-white"
+          >
+            📊 D3サンプル
+          </router-link>
+          <router-link 
+            to="/policy-prediction" 
+            class="text-white hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+            active-class="bg-blue-800 text-white"
+          >
+            🤖 AI予測
+          </router-link>
+        </div>
+
+        <!-- ユーザーメニュー -->
+        <div class="hidden md:flex items-center space-x-2">
+          <router-link 
+            to="/login" 
+            class="text-white hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+          >
+            ログイン
+          </router-link>
+          <router-link 
+            to="/register" 
+            class="bg-blue-800 text-white hover:bg-blue-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+          >
+            新規登録
+          </router-link>
         </div>
 
         <!-- モバイルメニューボタン -->
@@ -105,6 +135,37 @@
             @click="closeMobileMenu"
           >
             🗺️ 地図
+          </router-link>
+          <router-link 
+            to="/d3-samples" 
+            class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            active-class="bg-blue-900 text-white"
+            @click="closeMobileMenu"
+          >
+            📊 D3サンプル
+          </router-link>
+          <router-link 
+            to="/policy-prediction" 
+            class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            active-class="bg-blue-900 text-white"
+            @click="closeMobileMenu"
+          >
+            🤖 AI予測
+          </router-link>
+          <div class="border-t border-blue-700 my-2"></div>
+          <router-link 
+            to="/login" 
+            class="text-white hover:text-blue-200 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            @click="closeMobileMenu"
+          >
+            ログイン
+          </router-link>
+          <router-link 
+            to="/register" 
+            class="bg-blue-800 text-white hover:bg-blue-900 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+            @click="closeMobileMenu"
+          >
+            新規登録
           </router-link>
         </div>
       </div>
